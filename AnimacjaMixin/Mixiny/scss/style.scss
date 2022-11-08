@@ -1,0 +1,31 @@
+@mixin div-1($basic-color: green, $thickness: 1px, $type: solid){
+    border: $basic-color $thickness $type;
+}
+p{
+    @include div-1();
+}
+div{
+    @include div-1(rgb(0, 101, 184), 2px, dashed);
+}
+
+
+
+//     Dla urozmaicenia
+
+// p, div{
+//     width: 30%;
+//     height: 10%;
+//     color: white;
+    
+// }
+// body, div, p{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+// body{
+//     height: 100vh;
+//     background-color: rgb(0, 15, 27);
+//     flex-direction: column;
+//     gap: 5%;
+// }
